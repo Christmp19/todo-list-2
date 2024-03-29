@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- le div principal avec le font coloré -->
+    <div class="container">
+        <video autoplay loop muted plays-inline class="back-video">
+            <!-- change the video to your own -->
+            <source src="assets/video.mp4" />
+          </video>
+
+        <!-- Le div avec le to-do list -->
+        <div class="todo-app">
+            <h2>
+                To-Do List <img src="img/icon.png" alt="image liste">
+            </h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Ajouter une tâche">
+                <button onclick="Ajouter()">Ajouter</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+        <!-- Fin de la div to-do list-->
+
+        <!-- ajout du message -->
+        <div class="message-container">Élément supprimé</div>
+
+    </div>
+    <!-- Fin de la div principal -->
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
